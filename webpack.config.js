@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -31,5 +32,12 @@ module.exports = {
     inline: true,
     host: 'localhost',
     port: 3000,
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      minify: true,
+      template: path.join(__dirname, 'public', 'index.html'),
+      inject: 'body'
+    }),
+  ]
 };
