@@ -1,0 +1,17 @@
+.app-wrapper {
+
+    background-color: $-primary-color;
+    height: 100%;
+
+    h2 {
+        text-align: center;
+        margin: 0px 0px 15px 0px;
+        color: #4282ca;
+    }
+
+    .app-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}

@@ -2,8 +2,11 @@ import React from 'react';
 
 const App = () => {
     return (
-        <div>
-            <p>Wellcome to Webpack Reactjs Initialize!</p>
+        <div className="app-wrapper">
+            <h2>Wellcome to Webpack Reactjs Initialize!</h2>
+            <div className="app-content">
+                <span>Created by: Matheus Lopes</span>
+            </div>
         </div>
     );
 }
