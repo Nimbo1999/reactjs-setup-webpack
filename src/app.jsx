@@ -1,13 +1,17 @@
 import React from 'react';
 import Image from './assets/img/matheus-lopes.jpeg';
+import { useTranslation } from 'react-i18next';
 
 const App = () => {
+
+    const { t } = useTranslation();
+
     return (
         <div className="app-wrapper">
-            <h2>Wellcome to Webpack Reactjs Initialize!</h2>
+            <h2>{ t('title') }</h2>
             <div className="app-content">
                 <div className="image-content" style={ { backgroundImage: `url(${Image})` } } />
-                <span>Created by: Matheus Lopes</span>
+                <span>{ t('author') }</span>
             </div>
         </div>
     );
