@@ -6,12 +6,22 @@
     h2 {
         text-align: center;
         margin: 0px 0px 15px 0px;
+        padding: 15px 0px 0px 0px;
         color: #4282ca;
     }
 
     .app-content {
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+
+        .image-content {
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            background-position: center;
+            background-size: contain;
+        }
     }
 }
