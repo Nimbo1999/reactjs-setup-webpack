@@ -5,8 +5,8 @@
   "private": false,
   "author": "Matheus Lopes <matlopes1999@gmail.com> (https://github.com/Nimbo1999)",
   "scripts": {
-    "start": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "start": "webpack serve --config ./webpack/webpack.dev.js",
+    "build": "webpack --config ./webpack/webpack.prod.js"
   },
   "dependencies": {
     "i18next": "^19.8.4",
